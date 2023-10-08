@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Laboratorio#6</title>
+        <link href="img/utpp.png" rel="icon">
+        <meta charset="UTF-8" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- seccion 1 -->
+        <header class="header-area">
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1fg3I8riYCphmOgeb3pMAgZze5wZbPRlE?usp=sharing">Laboratorios</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1noKwsrWV8t4aRuX0wQi_okmU1q0l2kFy?usp=sharing">Tareas</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1EWp09m5dwLUHPKd7TOypOPCxaEIi58P8?usp=sharing">Parciales</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+
+        <main>
+            <!-- seccion 2 -->
+            <section id="quien" class="content-section">
+                <h1>Laboratorio #6 CSS Positions and Floating (Flexbox)</h1>
+                <br>
+                <li>Un menú de navegación colocado horizontalmente, cada enlace del menú debe tener un color de fondo, bordes redondeados y relleno para que sea visualmente agradable (20 pts)</li>
+                <li>Un encabezado con el título del laboratorio y su información (Adecuarlo visualmente a su manera). (20 pts)                </li>
+                <li>Una sección compuesta de 3 artículos, cada uno posee una imagen de 150x150px y una breve descripción que sobrepase el tamaño del contenedor para cortarlo con un enlace simulando el efecto de “ver más”. CADA ARTÍCULO DEBE ESTAR AL LADO DEL OTRO COMO UN CONJUNTO DE 3 COLUMNAS. (20 pts)</li>
+                <li>Una sección con una imagen alargada horizontalmente con un texto sobre ella explicando la imagen. (Buscar efecto para opacar la imagen y permitir que el texto se visualice). (20 pts)</li>
+                <li>Un pie de página con el logo de la UTP a la izquierda y el logo de la FISC a la derecha con un tamaño de 150x150px (20 pts)                </li>
+            </section>
+            <br />
+            <br />
+            <br>
+            <br>
+            <hr color="#01949A">
+            <br>
+
+            <!-- Seccion 3 -->
+            <style>
+                /* Estilos para que parezca un enlace */
+                summary {
+                  display: inline;
+                  cursor: pointer;
+                  color: blue;
+                  text-decoration: underline;
+                }
+                /* Estilos para ocultar el icono de flecha por defecto */
+                details > summary::-webkit-details-marker {
+                  display: none;
+                }
+              </style>
+
+
+
+            <section class="article-section">
+                <article class="article">
+                    <figure>
+                        <img src="./img/lab.jpg" alt="Imagen 1"/>
+                    </figure>
+                    <h2>Laboratorios</h2>
+                    <p class="description">
+                        Son espacios para estudiar, experimentar y ....
+                        <details>
+                            <summary>leer más</summary>
+                            <p>aprender el funcionamiento de programas de informática y practicar su uso.</p>
+                        </details>
+                    </p>
+                </article>
+                <article class="article">
+                    <figure>
+                        <img
+                        src="img/tarea.png"
+                        alt="Imagen 2"
+                        />
+                        
+                    </figure>
+                    <h2>Tareas</h2>
+                    <p class="description">
+                        Proporcionan oportunidades para que los estudiantes usen sus recursos cognitivos ... 
+                        <details>
+                            <summary>leer más</summary>
+                            <p>para logro de metas personales y educacionales. </p>
+                        </details>
+                    </p>
+                </article>
+                <article class="article">
+                    <figure>
+                        <img
+                            src="img/exam.png"
+                            alt="Imagen 3"
+                        />
+                    </figure>
+                    <h2>Parciales</h2>
+                    <p class="description">
+                        Se evalúa el aprendizaje de una parte de los contenidos de una material... 
+                        <details>
+                            <summary>leer más</summary>
+                            <p>o de un periodo, de allí el nombre “parcial”. </p>
+                          </details>
+                    </p>
+                    
+                </article>
+            </section>
+            <br />
+            <hr color="#01949A">
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!-- seccion 4 -->
+            <section class="seccion4">
+                <article>
+                    <p>
+                        Esta es una segunda plataforma de apoyo a las clases presenciales, habilitada a consecuencia de la pandemia con el propósito de incluir todos los cursos que no habían sido digitalizados hasta ese momento.
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>
+            <section class="footer__logos">
+                <div class="container">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/utpp.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="img/fisc.png" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <br>
+            <section class="footer">
+                <center><p>Copyright &copy; Grupo1</p></center>
+            </section>
+        </footer>
+        <br /><br />
+    </body>
+</html>

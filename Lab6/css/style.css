@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Oswald&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores */
+:root {
+    --primario: #f4faff;
+    --secundario: #01949A    ;
+    --alternativo: #DB1F48    ;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    background-color: var(--primario);
+}
+/* por el momento */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--primario);
+}
+
+header {
+    width: 100%;
+}
+nav ul {
+    margin-inline: 230px;
+    display: flex;
+    height: 60px;
+    background-color: var(--primario);
+    align-items: end;
+	border-bottom: var(--secundario) 1px solid;
+    justify-content: space-between; /* Alinea los elementos a la derecha */
+}
+
+/* Selecciona cada enlace del menú */
+nav li {
+    background-color: var(--secundario); /* Agrega un color de fondo */
+
+    /* top-left, top-right, bottom-right, bottom-left */
+    border-radius: 10px 10px 0 0; /* Agrega bordes redondeados */
+    padding: 10px 10px 10px 10px; /* Agrega relleno */
+}
+
+nav li:hover {
+    background-color: var(--alternativo);
+    cursor: pointer;
+    transition: ease 250ms all;
+}
+
+nav li:hover > a {
+    color: var(--secundario);
+    font-weight: bold;
+    transition: ease 250ms all;
+}
+
+/* ------------------- */
+/* 			MAIN		 */
+/* ------------------- */
+
+main {
+    padding-top: 3em;
+    padding-inline: 230px;
+}
+
+/*
+ * Sección 2
+*/
+
+/*
+ * Seccion 3
+*/
+.article-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    --title-color: black;
+    --img-scale: 1.001;
+    width: 250px;
+    max-height: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+.article figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    aspect-ratio: auto;
+    height: 150px;
+}
+.article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.3s ease-in-out;
+}
+article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.article h2 {
+    color: var(--title-color);
+    transition: 250ms ease-in all;
+}
+
+.description {
+    max-height: 150px; /* Altura máxima antes de que se corte el texto */
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.description a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+article:hover {
+	color: var(--primario);
+    --title-color: var(--alternativo);
+	background-color: var(--secundario);
+    cursor: pointer;
+    transition: ease-in 200ms all;
+}
+
+/* 
+ * Seccion 4
+*/
+
+.seccion4 {
+    background: no-repeat center url("../img/moodle.jpg") rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    height: 250px;
+}
+
+.seccion4:hover {
+	background-size: var(--img-scale);
+	transition: 2s ease background-size;
+}
+
+.seccion4 article {
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 2em;
+}
+
+.seccion4 article p {
+    color: #fff;
+    font-size: 1.2em;
+    width: 50%;
+}
+
+/*
+ * Footer 
+*/
+
+footer {
+    text-align: center;
+}
+
+/* tamaño de las imagenes en el footer*/
+.footer__logos img {
+    width: 150px;
+    height: 150px;
+}
+
+.footer__logos .logo {
+    opacity: 0.5;
+    transition: ease 250ms all;
+}
+.footer__logos .logo:hover {
+    opacity: 1;
+}
+
+.footer__logos .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+}
